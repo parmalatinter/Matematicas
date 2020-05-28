@@ -53,8 +53,8 @@ class Book(object):
         y = np.sqrt(x) + a
         Book.plot(x, y)
 
-    def func_not_found(self):
-        print('No Function ' + str(self.num) + ' Found!')
+    def func_not_found(self, *args):
+        print('No Function ' + "learn_{0}".format(str(self.num)) + ' Found!')
 
     def exec(self):
         self.method_name = "learn_{0}".format(str(self.num))
