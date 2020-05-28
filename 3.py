@@ -41,9 +41,9 @@ class Book(object):
     @staticmethod
     # べき乗
     def learn_3(*args):
-        x = int(args[0])
+        x = np.linspace(-1, 1)
         y = 3 * x + 2
-        print(y)
+        Book.plot(x, y)
 
     @staticmethod
     # 平方根
